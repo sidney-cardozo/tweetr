@@ -1,0 +1,30 @@
+.container {
+  width: 450px;
+  background-color: white;
+  margin: auto;
+  padding-top: 140px;
+  height: 700px;
+ }
+
+ .new-tweet {
+  background-color: lightgrey;
+  margin: 0em 2em 0em 2em;
+  padding: 1em 1em 1em 1em;
+  border-radius: 0.5em;
+ }
+
+ .new-tweet h2 {
+  border-bottom: 1px solid black;
+  margin-top: 0em;
+
+ }
+
+ .new-tweet form textarea {
+  width: 100%;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+ }
+
+ .new-tweet form .counter {
+  padding-left: 75% ;
+  font-style: italic;
+ }
