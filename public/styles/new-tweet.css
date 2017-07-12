@@ -24,7 +24,14 @@
   padding: 0.5em 0.5em 0.5em 0.5em;
  }
 
+
+
  .new-tweet form .counter {
   padding-left: 75% ;
   font-style: italic;
+ }
+
+ .redText {
+  color: red;
+  font-style: bold;
  }

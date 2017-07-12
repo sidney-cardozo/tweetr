@@ -19,6 +19,9 @@
     <!-- New-Tweet CSS -->
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
+     <!-- Tweets CSS -->
+    <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
+
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
@@ -40,6 +43,7 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
+
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
         <form method="POST" action="/tweets/">
@@ -48,7 +52,24 @@
           <span class="counter">140</span>
         </form>
       </section>
+      <section id= "tweet-feed">
+        <article class="tweet">
+          <header class="clear-fix">
+            <img src="http://lorempixel.com/60/60/" />
+            <h2>Bill Fields</h2>
+            <span> @MrFields </span>
+          </header>
+          <main>
+             Little tweet here
+          </main>
+          <footer>
+            <p>
+              <span> 10 days ago </span>
+              <span class="icons"> &#10084; &#32; &#9993; &#32;  &#9873; </span>
+            </p>
+          </footer>
+        </article>
+      </section>
     </main>
-
   </body>
 </html>
