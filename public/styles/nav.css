@@ -6,6 +6,7 @@
   color: #e8fdff;
   padding: 0em 2em 0em 2em;
   width: 100%;
+  z-index: 1;
 }
 
 #nav-bar .logo {
@@ -24,12 +25,12 @@
 
 #nav-bar #toggle {
   opacity: 0.85;
-  left: 75em;
-  position: absolute;
+  float: right;
   padding: 0.5em;
-  top: 1.25em;
   border: 0.1em solid white;
   border-radius: 0.25em;
+  margin-right: 35em;
+  margin-top: 1.15em;
 }
 
 #nav-bar #toggle:hover {

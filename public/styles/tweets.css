@@ -3,6 +3,7 @@ article.tweet {
   padding: 1em 0em 1em 0em;
 
   margin: 2em 2em 2em 2em;
+  height: 100%;
 }
 
 article.tweet:hover{

@@ -39,7 +39,6 @@ function createTweetElement (tweetObject) {
   }
 
   function renderTweets(tweetObjects){
-    tweetObjects.reverse();
     for(tweet of tweetObjects){
       $('#tweet-feed').append(createTweetElement(tweet));
     }
