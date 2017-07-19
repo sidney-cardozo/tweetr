@@ -1,7 +1,6 @@
 article.tweet {
   opacity: 0.85;
   padding: 1em 0em 1em 0em;
-
   margin: 2em 2em 2em 2em;
   height: 100%;
 }
@@ -38,8 +37,7 @@ article.tweet main {
   text-align: left;
   border-left: 1px solid lightgrey;
   border-right: 1px solid lightgrey;
-
-
+  word-wrap: break-word;
 }
 
 article.tweet footer {
@@ -60,6 +58,7 @@ article.tweet footer .icons {
 article.tweet:hover footer .icons {
   display: block;
 }
+
 .clear-fix {
   content:"";
   display: table;
