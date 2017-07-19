@@ -3,6 +3,17 @@
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
+ function timeSince(date) {
+  var _MS_PER_DAY = 1000 * 60 * 60 * 24;
+  date = new Date(date); // converts inputed date to “js date”
+  let today = new Date();
+
+ // Discard the time and time-zone information.
+  var utc1 = Date.UTC(today.getFullYear(), today.getMonth(), today.getDate());
+  var utc2 = Date.UTC(date.getFullYear(), date.getMonth(), date.getDate());
+
+ return Math.floor((utc2 - utc1) / _MS_PER_DAY);
+}
 function createTweetElement (tweetObject) {
 
     var $tweet = $("<article>").addClass("tweet");
@@ -53,7 +64,7 @@ $(document).ready(function() {
     event.preventDefault();
     if($("section.new-tweet textarea").val() === ""){
       alert("Can not leave it blank");
-    } else if($(".counter").text() > 140){
+    } else if($("section.new-tweet textarea").val().length > 140){
       alert("exceeded text limit");
     }
     else { $.ajax({
